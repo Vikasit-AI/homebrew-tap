@@ -1,36 +1,14 @@
-# Vikasit AI Homebrew Tap
+# Vikasit Code Homebrew Tap
 
-Homebrew formulae for [Vikasit AI](https://vikasit.ai) tools.
+Install [Vikasit Code](https://vikasit.ai) via Homebrew.
 
-## Install
-
-```sh
-brew tap vikasit-ai/tap
+```bash
+brew tap Vikasit-AI/tap
 brew install vikasit-code
 ```
 
-Or in one line:
+Upgrade to the latest:
 
-```sh
-brew install vikasit-ai/tap/vikasit-code
-```
-
-## Upgrade
-
-```sh
-brew update
+```bash
 brew upgrade vikasit-code
 ```
-
-## Uninstall
-
-```sh
-brew uninstall vikasit-code
-brew untap vikasit-ai/tap
-```
-
-## Formulae
-
-| Formula | Description |
-|---------|-------------|
-| [`vikasit-code`](Formula/vikasit-code.rb) | Terminal-native AI coding assistant |

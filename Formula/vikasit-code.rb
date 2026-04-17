@@ -1,28 +1,28 @@
 class VikasitCode < Formula
-  desc "Terminal-native AI coding assistant powered by Vikasit AI"
+  desc "Vikasit Code — AI coding agent for the terminal"
   homepage "https://vikasit.ai"
-  version "2.0.2"
+  version "2.0.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Vikasit-AI/releases/releases/download/v2.0.2/vikasit-code-darwin-arm64.zip"
-      sha256 "aea5f318b990520a963a62104fed4e826c46c35ca14c3c4d6968407bde381b62"
+      url "https://github.com/Vikasit-AI/releases/releases/download/v#{version}/vikasit-code-darwin-arm64.zip"
+      sha256 "0c492d436c87f6de7af0a7dfbee332bf1e95374cfab02bb09e8737bd87195dcc"
     end
     on_intel do
-      url "https://github.com/Vikasit-AI/releases/releases/download/v2.0.2/vikasit-code-darwin-x64.zip"
-      sha256 "ec5a8e503da372d4ef7d7d5862a954326378730c6b255d940b454c267188a6bf"
+      url "https://github.com/Vikasit-AI/releases/releases/download/v#{version}/vikasit-code-darwin-x64.zip"
+      sha256 "57e732af1d055796a48421a4b9ff1dadf6ddfbbd38ba9a5fc1e2e3fd403410e7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Vikasit-AI/releases/releases/download/v2.0.2/vikasit-code-linux-arm64.tar.gz"
-      sha256 "55b19786740366e40a4e8dba0bfaad858db40acf65034c8825e3ae8d4ae82a99"
+      url "https://github.com/Vikasit-AI/releases/releases/download/v#{version}/vikasit-code-linux-arm64.tar.gz"
+      sha256 "131ccd3fbecebbe6f238abf9f826cbdb75711ac5673c98c54bc2e85b0930bbad"
     end
     on_intel do
-      url "https://github.com/Vikasit-AI/releases/releases/download/v2.0.2/vikasit-code-linux-x64.tar.gz"
-      sha256 "120b1ad96f28d997a34edf68ac09f5bc48e5210e9b013c8b80ba0a4b171cce06"
+      url "https://github.com/Vikasit-AI/releases/releases/download/v#{version}/vikasit-code-linux-x64.tar.gz"
+      sha256 "eb46e46cd614ef10616e86c84d2befe7fbb8a0ef4305da83f575b8c209a46f5e"
     end
   end
 
@@ -31,6 +31,6 @@ class VikasitCode < Formula
   end
 
   test do
-    assert_match "vikasit", shell_output("#{bin}/vikasit --version")
+    system "#{bin}/vikasit", "--version"
   end
 end
