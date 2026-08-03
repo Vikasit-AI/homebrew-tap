@@ -5,22 +5,22 @@
 class VikasitCode < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://github.com/Vikasit-AI/vikasit-code"
-  version "2.2.3"
+  version "2.2.4"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Vikasit-AI/releases/releases/download/v2.2.3/vikasit-code-darwin-x64.zip"
-      sha256 "5fda2dfa83187b7269b00f828907ae62f56880c80a111d761534119cdc938907"
+      url "https://github.com/Vikasit-AI/releases/releases/download/v2.2.4/vikasit-code-darwin-x64.zip"
+      sha256 "8be173b282b76a86ec6a31cd0e1335a524634e36e9815e1e671f4fbeef767e83"
 
       def install
         bin.install "vikasit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Vikasit-AI/releases/releases/download/v2.2.3/vikasit-code-darwin-arm64.zip"
-      sha256 "fa36f3bd3dcf46e1bc23f7efe1d0b1723eb519d45604ad08c107299d29d031c0"
+      url "https://github.com/Vikasit-AI/releases/releases/download/v2.2.4/vikasit-code-darwin-arm64.zip"
+      sha256 "d1e3951f430c47045485064c589cabaf52d7f7a0300044a489bdf2618402ab85"
 
       def install
         bin.install "vikasit"
@@ -30,15 +30,15 @@ class VikasitCode < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Vikasit-AI/releases/releases/download/v2.2.3/vikasit-code-linux-x64.tar.gz"
-      sha256 "cd91a6050a83876d23e15881077a30e1de579a48563fa75dc9379f1b455799ce"
+      url "https://github.com/Vikasit-AI/releases/releases/download/v2.2.4/vikasit-code-linux-x64.tar.gz"
+      sha256 "9689a766b4d84d7161c25c60dfedb5ef4493f800a56fe6c523f7a3e406c61504"
       def install
         bin.install "vikasit"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Vikasit-AI/releases/releases/download/v2.2.3/vikasit-code-linux-arm64.tar.gz"
-      sha256 "64fc21a20806351494f799210a5a87ab562b487d610f7412117ac582f6de6413"
+      url "https://github.com/Vikasit-AI/releases/releases/download/v2.2.4/vikasit-code-linux-arm64.tar.gz"
+      sha256 "44e24dcf56e176835a1f8d55e36952e3fdebf702b89cba81b5f74ac026e5a345"
       def install
         bin.install "vikasit"
       end
